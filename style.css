@@ -1,0 +1,214 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffafa;
+  color: #343034;
+}
+.navbar-brand {
+  color: #9b5572;
+  font-size: 25px;
+}
+.nav-link:hover,
+.nav-link.active {
+  color: #9b5572 !important;
+}
+.hero-section {
+  background-color: #f5e4eb;
+  padding: 110px 20px;
+}
+.hero-section h1 {
+  color: #753d55;
+  font-size: 46px;
+  font-weight: bold;
+}
+.hero-text {
+  font-size: 18px;
+  margin: 20px auto 28px;
+}
+.eyebrow {
+  color: #9b5572;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.section-heading h1,
+.section-heading h2 {
+  color: #753d55;
+  font-weight: bold;
+}
+.section-heading p:last-child {
+  color: #6d6469;
+}
+.category-card {
+  height: 100%;
+  padding-bottom: 18px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+}
+.category-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+.category-card h3 {
+  font-size: 18px;
+  margin: 16px;
+}
+.category-card a {
+  color: #9b5572;
+  margin: 0 16px;
+  text-decoration: none;
+}
+.category-card a:hover {
+  text-decoration: underline;
+}
+.welcome-band {
+  background-color: #f5e4eb;
+}
+.category-filter .btn {
+  margin: 4px;
+}
+.category-filter .btn.active {
+  background-color: #212529;
+  color: white;
+}
+.service-card,
+.stylist-card {
+  height: 100%;
+  border: none;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+.service-card img {
+  width: 100%;
+  height: 205px;
+  object-fit: cover;
+}
+.stylist-card img {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+.service-card h5,
+.stylist-card h5 {
+  color: #843e5d;
+}
+.service-meta {
+  font-weight: bold;
+}
+.product-note {
+  font-size: 14px;
+  color: #665e63;
+}
+.booking-form {
+  background: white;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+.booking-summary {
+  background: #f5e4eb;
+  padding: 16px;
+  border-radius: 8px;
+}
+.time-slot {
+  margin: 4px;
+}
+.time-slot.selected {
+  background: #9b5572;
+  color: white;
+  border-color: #9b5572;
+}
+.time-slot:disabled {
+  opacity: 0.5;
+}
+.receipt {
+  white-space: pre-line;
+  line-height: 1.8;
+}
+.site-footer {
+  background: #292329;
+  color: white;
+  padding: 24px 0;
+  margin-top: 30px;
+}
+@media (max-width: 576px) {
+  .hero-section {
+    padding: 75px 16px;
+  }
+  .hero-section h1 {
+    font-size: 34px;
+  }
+  .booking-form {
+    padding: 18px;
+  }
+}
+[data-bs-theme="dark"] body {
+  background-color: #1a1619;
+  color: #eeeeee;
+}
+
+[data-bs-theme="dark"] .navbar-brand,
+[data-bs-theme="dark"] .eyebrow,
+[data-bs-theme="dark"] .category-card a,
+[data-bs-theme="dark"] .nav-link:hover,
+[data-bs-theme="dark"] .nav-link.active {
+  color: #d98cab !important;
+}
+
+[data-bs-theme="dark"] .hero-section,
+[data-bs-theme="dark"] .welcome-band {
+  background-color: #2b2127;
+}
+
+[data-bs-theme="dark"] .hero-section h1,
+[data-bs-theme="dark"] .section-heading h1,
+[data-bs-theme="dark"] .section-heading h2,
+[data-bs-theme="dark"] .service-card h5,
+[data-bs-theme="dark"] .stylist-card h5 {
+  color: #e8a9c2;
+}
+
+[data-bs-theme="dark"] .section-heading p:last-child,
+[data-bs-theme="dark"] .product-note {
+  color: #b9aeb4;
+}
+
+[data-bs-theme="dark"] .category-card,
+[data-bs-theme="dark"] .booking-form {
+  background: #262126;
+}
+
+[data-bs-theme="dark"] .booking-summary {
+  background: #33282e;
+}
+
+/* Buttons that were dark must become light/pink */
+[data-bs-theme="dark"] .btn-dark {
+  --bs-btn-bg: #9b5572;
+  --bs-btn-border-color: #9b5572;
+  --bs-btn-color: #ffffff;
+  --bs-btn-hover-bg: #b4688a;
+  --bs-btn-hover-border-color: #b4688a;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-active-bg: #b4688a;
+  --bs-btn-active-border-color: #b4688a;
+}
+
+[data-bs-theme="dark"] .btn-outline-dark {
+  --bs-btn-color: #f8f9fa;
+  --bs-btn-border-color: #f8f9fa;
+  --bs-btn-hover-color: #000000;
+  --bs-btn-hover-bg: #f8f9fa;
+  --bs-btn-hover-border-color: #f8f9fa;
+  --bs-btn-active-color: #000000;
+  --bs-btn-active-bg: #f8f9fa;
+  --bs-btn-active-border-color: #f8f9fa;
+}
+
+[data-bs-theme="dark"] .category-filter .btn.active {
+  background-color: #9b5572;
+  border-color: #9b5572;
+  color: white;
+}
