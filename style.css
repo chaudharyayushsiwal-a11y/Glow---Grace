@@ -184,7 +184,7 @@ body {
   background: #33282e;
 }
 
-/* Buttons that were dark must become light/pink */
+
 [data-bs-theme="dark"] .btn-dark {
   --bs-btn-bg: #9b5572;
   --bs-btn-border-color: #9b5572;

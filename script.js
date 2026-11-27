@@ -25,7 +25,7 @@ const timeSlots = {
 
 function get(id) { return document.getElementById(id); }
 
-// SERVICES PAGE
+
 function showServices(category = "all") {
     const grid = get("serviceGrid");
     if (!grid) return;
@@ -70,7 +70,7 @@ if (categoryTabs) {
     else showServices();
 }
 
-// STYLISTS PAGE
+
 function showStylists() {
     const grid = get("stylistGrid");
     if (!grid) return;
@@ -92,7 +92,7 @@ function showStylists() {
 }
 showStylists();
 
-// BOOKING PAGE
+
 function setupBookingPage() {
     const form = get("bookingForm");
     if (!form) return;
@@ -210,7 +210,7 @@ function setupBookingPage() {
     updateSummary();
 }
 setupBookingPage();
-// DARK MODE
+
 const themeBtn = get("themeBtn");
 
 function setTheme(theme) {
@@ -221,10 +221,10 @@ function setTheme(theme) {
     }
 }
 
-// Load the saved theme (or light if nothing is saved)
+
 setTheme(localStorage.getItem("theme") || "light");
 
-// Switch theme when the button is clicked
+
 if (themeBtn) {
     themeBtn.addEventListener("click", function () {
         const current = document.documentElement.getAttribute("data-bs-theme");
